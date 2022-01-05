@@ -1,9 +1,16 @@
 --
--- Database Setting
+-- Settings for database
 --
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+08:00";
+
+--
+-- Users for database `test`
+--
+CREATE USER 'pyuser'@'localhost' IDENTIFIED BY 'pyassword';
+GRANT ALL PRIVILEGES ON test . * TO 'pyuser'@'localhost';
+FLUSH PRIVILEGES;
 
 --
 -- Database: `test`
