@@ -6,7 +6,6 @@
 import mysql.connector
 from mysql.connector import Error
 
-
 try:
     connection = mysql.connector.connect(
     host="localhost",
